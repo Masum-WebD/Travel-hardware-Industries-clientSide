@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name":"Steel Range",
+        "img":"https://images.unsplash.com/photo-1503789146722-cf137a3c0fea?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"799",
+        "price":"49"
+    },
+    {
+        "id": 2,
+        "name":"Wire strippers",
+        "img":"https://as2.ftcdn.net/v2/jpg/01/31/00/39/1000_F_131003951_gBLfJLd42uri9yw9Yd7M2wf5AHHUIV2o.jpg",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"899",
+        "price":"79"
+    },
+    {
+        "id": 3,
+        "name":"Hammer",
+        "img":"https://images.unsplash.com/photo-1607870411590-d5e9e06da09a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"999",
+        "price":"69"
+    },
+    {
+        "id": 4,
+        "name":"Hacksaws",
+        "img":"https://images.unsplash.com/photo-1502068713670-5acaa8128a4f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"1100",
+        "price":"29"
+    },
+    {
+        "id": 5,
+        "name":"Hex keys",
+        "img":"https://img.freepik.com/free-photo/hex-key-set-isolated-white-background_287084-114.jpg?w=740",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"699",
+        "price":"79"
+    },
+    {
+        "id": 6,
+        "name":"Electric drill",
+        "img":"https://img.freepik.com/free-photo/electric-hammer-drill-lies-wooden-table_93675-132463.jpg?t=st=1653395870~exp=1653396470~hmac=944f00a6de451cff9cf84f193acbf341529447a490432db08a65d5853504248a&w=740",
+        "description":"Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+        "availableQuantity":"5000",
+        "minQuantity":"499",
+        "price":"399"
+    }
+]
