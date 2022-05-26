@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Review from "./Review";
 
 const Reviews = () => {
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("review.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
+
   return (
-    <div class="stats shadow">
-      <div class="stat place-items-center">
-        <div class="stat-title">Downloads</div>
-        <div class="stat-value">31K</div>
-        <div class="stat-desc">From January 1st to February 1st</div>
-      </div>
-
-      <div class="stat place-items-center">
-        <div class="stat-title">Users</div>
-        <div class="stat-value text-secondary">4,200</div>
-        <div class="stat-desc text-secondary">↗︎ 40 (2%)</div>
-      </div>
-
-      <div class="stat place-items-center">
-        <div class="stat-title">New Registers</div>
-        <div class="stat-value">1,200</div>
-        <div class="stat-desc">↘︎ 90 (14%)</div>
+    <div className='mx-12'>
+        <h1 class='text-3xl mt-10 font-bold text-rose-700'>Customer Review</h1>
+      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 mt-6">
+        {reviews.map((review) => (
+          <div class="hero bg-base-200">
+            <div class="hero-content">
+              <div class="avatar">
+                <div class="w-24 rounded-full">
+                  <img src={review.img} alt="" />
+                </div>
+              </div>
+              <div>
+                <h1 class="text-xl font-bold">{review.name}</h1>
+                <p class="py-6">{review.comment}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
