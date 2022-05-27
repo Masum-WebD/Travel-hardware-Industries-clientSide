@@ -1,6 +1,7 @@
 import React from "react";
+import Advantage from "./Advantage";
 import Banner from "./Banner";
-import Bonus from "./Bonus";
+import ChooseUs from "./ChooseUs";
 import Products from "./Products";
 import Reviews from "./Reviews";
 import Summary from "./Summary";
@@ -12,8 +13,9 @@ const Home = () => {
       <Banner></Banner>
       <Products></Products>
       <Summary></Summary>
-      <Bonus></Bonus>
+      <Advantage></Advantage>
       <Reviews></Reviews>
+      <ChooseUs></ChooseUs>
      
     </div>
   );
