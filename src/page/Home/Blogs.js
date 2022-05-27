@@ -5,13 +5,13 @@ const Blogs = () => {
     <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
       <div
         tabindex="0"
-        class="collapse collapse-arrow border bg-primary mt-10  rounded-box"
+        className="collapse collapse-arrow border bg-primary mt-10  rounded-box"
       >
-        <div class="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium">
           How will you improve the performance of a React Application?
         </div>
-        <div class="collapse-content">
-          <table class="table table-zebra ">
+        <div className="collapse-content">
+          <table className="table table-zebra ">
             <tbody>
               <tr>
                 <td>Keeping component state local where necessary</td>
@@ -37,12 +37,12 @@ const Blogs = () => {
       </div>
       <div
         tabindex="0"
-        class="collapse collapse-arrow border bg-primary mt-10 rounded-box"
+        className="collapse collapse-arrow border bg-primary mt-10 rounded-box"
       >
-        <div class="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium">
           What are the different ways to manage a state in a React application?
         </div>
-        <div class="collapse-content">
+        <div className="collapse-content">
           <p>There are four main types of state.</p>
           <h1>
             {" "}
@@ -68,12 +68,12 @@ const Blogs = () => {
 
       <div
         tabindex="0"
-        class="collapse collapse-arrow border bg-primary mt-10 rounded-box"
+        className="collapse collapse-arrow border bg-primary mt-10 rounded-box"
       >
-        <div class="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium">
           How does prototypical inheritance work?
         </div>
-        <div class="collapse-content">
+        <div className="collapse-content">
           <p>
             {" "}
             Prototype Inheritance is a feature of JavaScript that is used to add
@@ -86,24 +86,36 @@ const Blogs = () => {
       </div>
       <div
         tabindex="0"
-        class="collapse collapse-arrow border  bg-primary rounded-box"
+        className="collapse collapse-arrow border  bg-primary rounded-box"
       >
-        <div class="collapse-title text-xl font-medium">
+        <div className="collapse-title text-xl font-medium">
           What is a unit test? Why should write unit tests?
         </div>
-        <div class="collapse-content">
-          <p>Unit testing is a type of software testing.Different levels of software testing,unit testing then integration testing , system testing,acceptance testing.Unit tests are typically automated tests written and run by software developers to ensure that a section of an application.This can help them to stay focused and can also help them to create much better designs.</p>
+        <div className="collapse-content">
+          <p>
+            Unit testing is a type of software testing.Different levels of
+            software testing,unit testing then integration testing , system
+            testing,acceptance testing.Unit tests are typically automated tests
+            written and run by software developers to ensure that a section of
+            an application.This can help them to stay focused and can also help
+            them to create much better designs.
+          </p>
         </div>
-        </div>
+      </div>
       <div
         tabindex="0"
-        class="collapse collapse-arrow border  bg-primary rounded-box"
+        className="collapse collapse-arrow border  bg-primary rounded-box"
       >
-        <div class="collapse-title text-xl font-medium">
-        hy you do not set products = [...] instead, you use the setProducts?
+        <div className="collapse-title text-xl font-medium">
+          hy you do not set products = [...] instead, you use the setProducts?
         </div>
-        <div class="collapse-content">
-          <p>setState() as a request rather than an immediate command to update the component.s changes to the component state and tells React that this component and its children need to be re-rendered with the updated state.setState() works to set the value </p>
+        <div className="collapse-content">
+          <p>
+            setState() as a request rather than an immediate command to update
+            the component.s changes to the component state and tells React that
+            this component and its children need to be re-rendered with the
+            updated state.setState() works to set the value{" "}
+          </p>
         </div>
       </div>
     </div>
