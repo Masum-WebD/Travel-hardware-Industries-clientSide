@@ -1,19 +1,13 @@
 [
-    {   
-        "id":1,
-        "name": "Jacky Trudo",
+    {"name": "Jacky Trudo",
         "img":"https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=740&t=st=1653579976~exp=1653580576~hmac=a3f059191b91659404f22e6c34d46ef94551fb193d85f75c0330d6c729f05651",
         "comment":"I have been buying products from this company for many years. I am satisfied with his services and products"
     },
-    {  
-        "id":2,
-        "name": "Jacky Trudo",
+    { "name": "Jacky Trudo",
         "img":"https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19637.jpg?w=740&t=st=1653581641~exp=1653582241~hmac=f7ae14992f4d21712d7320f349e8260e201259dfc55c32d683125528df9352a0",
         "comment":"I have been buying products from this company for many years. I am satisfied with his services and products"
     },
-    {   
-        "id":3,
-        "name": "Jacky Trudo",
+    {"name": "Jacky Trudo",
         "img":"https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=740&t=st=1653581672~exp=1653582272~hmac=1f9b258663c0fa7b7384d10224c151686a03127707e274ed30afa9da09ec6705",
         "comment":"I have been buying products from this company for many years. I am satisfied with his services and products"
     }

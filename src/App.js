@@ -8,6 +8,9 @@ import Register from './page/Login/Register';
 import Header from './page/Home/Header';
 import MyPortfolio from './page/Home/MyPortfolio';
 import NotFound from './page/Shared/NotFound';
+import RequireAuth from './page/Login/RequireAuth';
+import Purchase from './page/Purchase/Purchase';
+import DashBoard from './page/DashBoard/DashBoard';
 
 function App() {
   return (
@@ -22,6 +25,14 @@ function App() {
        <Route path='MyPortfolio' element={<MyPortfolio></MyPortfolio>}></Route>
        <Route path='*' element={<NotFound></NotFound>}></Route>
        <Route path='register' element={<Register></Register>}></Route>
+       <Route path='/dashBoard' element={<RequireAuth>
+        <DashBoard></DashBoard>
+       </RequireAuth>}></Route>
+       <Route path='/purchase/:id' element={
+         <RequireAuth>
+           <Purchase></Purchase>
+         </RequireAuth>
+       }></Route>
       </Routes>
       <Footer></Footer>
     </div>
