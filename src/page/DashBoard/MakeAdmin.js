@@ -29,6 +29,8 @@ const MakeAdmin = ({ refetch, index }) => {
       });
   };
   return (
+    <div>
+      
     <tr>
       <th>{index}</th>
       <td>{user.email}</td>
@@ -41,6 +43,7 @@ const MakeAdmin = ({ refetch, index }) => {
         <button className="btn btn-xs">Remove User</button>
       </td>
     </tr>
+    </div>
   );
 };
 
