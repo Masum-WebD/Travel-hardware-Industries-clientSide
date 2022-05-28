@@ -15,6 +15,8 @@ import DashBoard from './page/DashBoard/DashBoard';
 import MyOrders from './page/DashBoard/MyOrders';
 import AddReview from './page/DashBoard/AddReview';
 import { ToastContainer } from 'react-toastify';
+import MakeAdmin from './page/DashBoard/MakeAdmin';
+import Users from './page/DashBoard/Users';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
        </RequireAuth>}>
          <Route index element={<MyOrders></MyOrders>}></Route>
          <Route path='review' element={<AddReview></AddReview>}></Route>
+         <Route path='makeAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
+         <Route path="users" element={<Users></Users>}></Route>
        </Route>
        <Route path='/purchase/:id' element={
          <RequireAuth>

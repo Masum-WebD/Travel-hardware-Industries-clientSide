@@ -17,7 +17,10 @@ const DashBoard = () => {
             <Link to="/dashBoard">My Orders</Link>
           </li>
           <li>
-            <Link to="/dashBoard/review ">Sidebar Item 2</Link>
+            <Link to="/dashBoard/review ">Add Review</Link>
+          </li>
+          <li>
+            <Link to="/dashBoard/makeAdmin ">Make Admin</Link>
           </li>
         </ul>
       </div>
