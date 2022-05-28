@@ -4,7 +4,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/review")
+    fetch("https://trevel-hardware.herokuapp.com/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
@@ -16,7 +16,7 @@ const Reviews = () => {
       </h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 mt-6">
         {reviews.map((review) => (
-          <div className="hero bg-base-200">
+          <div className="hero bg-base-200" key={review._id}>
             <div className="hero-content">
               <div className="avatar">
                 <div className="w-24 rounded-full">

@@ -4,7 +4,7 @@ const Blogs = () => {
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
       <div
-        tabindex="0"
+        tabIndex="0"
         className="collapse collapse-arrow border bg-primary mt-10  rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
@@ -36,7 +36,7 @@ const Blogs = () => {
         </div>
       </div>
       <div
-        tabindex="0"
+        tabIndex="0"
         className="collapse collapse-arrow border bg-primary mt-10 rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
@@ -67,7 +67,7 @@ const Blogs = () => {
       </div>
 
       <div
-        tabindex="0"
+        tabIndex="0"
         className="collapse collapse-arrow border bg-primary mt-10 rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
@@ -85,7 +85,7 @@ const Blogs = () => {
         </div>
       </div>
       <div
-        tabindex="0"
+        tabIndex="0"
         className="collapse collapse-arrow border  bg-primary rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
@@ -103,7 +103,7 @@ const Blogs = () => {
         </div>
       </div>
       <div
-        tabindex="0"
+        tabIndex="0"
         className="collapse collapse-arrow border  bg-primary rounded-box"
       >
         <div className="collapse-title text-xl font-medium">

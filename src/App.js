@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './page/Home/Home';
 import Blogs from './page/Home/Blogs';
 import Footer from './page/Shared/Footer';
@@ -11,6 +12,9 @@ import NotFound from './page/Shared/NotFound';
 import RequireAuth from './page/Login/RequireAuth';
 import Purchase from './page/Purchase/Purchase';
 import DashBoard from './page/DashBoard/DashBoard';
+import MyOrders from './page/DashBoard/MyOrders';
+import AddReview from './page/DashBoard/AddReview';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -27,7 +31,10 @@ function App() {
        <Route path='register' element={<Register></Register>}></Route>
        <Route path='/dashBoard' element={<RequireAuth>
         <DashBoard></DashBoard>
-       </RequireAuth>}></Route>
+       </RequireAuth>}>
+         <Route index element={<MyOrders></MyOrders>}></Route>
+         <Route path='review' element={<AddReview></AddReview>}></Route>
+       </Route>
        <Route path='/purchase/:id' element={
          <RequireAuth>
            <Purchase></Purchase>
@@ -35,6 +42,7 @@ function App() {
        }></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
