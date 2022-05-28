@@ -3,20 +3,17 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
-const MakeAdmin = ( { refetch, index }) => {
-//   const { email, } = user;
+const MakeAdmin = ({ refetch, index }) => {
+  //   const { email, } = user;
 
-  const [user]=useAuthState(auth)
+  const [user] = useAuthState(auth);
   const makeAdmin = () => {
-    fetch(
-      `http://localhost:5000/user/admin/${user.email}`,
-      {
-        method: "PUT",
-        headers: {
-            "content-type": "application/json",
-        },
-      }
-    )
+    fetch(`https://trevel-hardware.herokuapp.com/user/admin/${user.email}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+    })
       .then((res) => {
         if (res.status === 403) {
           toast.error("Failed to Make an admin");
@@ -27,7 +24,7 @@ const MakeAdmin = ( { refetch, index }) => {
       .then((data) => {
         if (data.modifiedCount > 0) {
           refetch();
-          toast.success('Successfully made an admin');
+          toast.success("Successfully made an admin");
         }
       });
   };
@@ -36,9 +33,9 @@ const MakeAdmin = ( { refetch, index }) => {
       <th>{index}</th>
       <td>{user.email}</td>
       <td>
-          <button onClick={makeAdmin} className="btn btn-xs">
-            Make Admin
-          </button>
+        <button onClick={makeAdmin} className="btn btn-xs">
+          Make Admin
+        </button>
       </td>
       <td>
         <button className="btn btn-xs">Remove User</button>

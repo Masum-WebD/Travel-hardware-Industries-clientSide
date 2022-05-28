@@ -3,14 +3,13 @@ import { useQuery } from "react-query";
 import Loading from "../Login/Loading";
 import MakeAdmin from "./MakeAdmin";
 
-
 const Users = () => {
   const {
     data: users,
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch("http://localhost:5000/user", {
+    fetch("https://trevel-hardware.herokuapp.com/user", {
       method: "GET",
       headers: {
         "content-type": "application/json",
