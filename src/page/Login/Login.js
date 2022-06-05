@@ -124,7 +124,7 @@ const Login = () => {
   
             <p className="text-black">
               {" "}
-              New to doctor portal{" "}
+              New to Travel Hardware{" "}
               <Link className="text-[#0FCFEC]" to="/register">
                 Create a new account
               </Link>{" "}
