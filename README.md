@@ -1,4 +1,12 @@
 # Getting Started with Create React App
+Live site link:https://celadon-travesseiro-543ef4.netlify.app/
+
+# What I used
+1. I used my project React.
+2.  I used firebase for authentication.
+3.  rect form used.
+4.  react query used this project.
+5.  MongoDb used for database.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
