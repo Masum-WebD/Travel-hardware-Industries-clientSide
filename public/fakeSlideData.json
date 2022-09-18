@@ -1,0 +1,37 @@
+[
+    {
+        "name": "HAMMER TOOL",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/21-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "DACKER TOOL",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/22-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "DRILL TOOL",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/23-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "CALIFORNIA AIR",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/24-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "WRENCH TOOLS",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/25-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "CIRCULAR SAW",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/26-cz_categoryimagelist.jpg"
+    },
+    {
+        "name": "PLANET POWER",
+        "price": 40,
+        "photo": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/20-cz_categoryimagelist.jpg"
+    }
+]
