@@ -46,12 +46,9 @@ const SlideProducts = () => {
     ]
   };
   return (
-    <div className="mt-5" >
-      <Slider {...settings} >
-        
+    <div className="mt-5 mx-12" >
+      <Slider {...settings} >        
         {products.map((p) => <SlideProduct kay={p._id} product={p}></SlideProduct>)}
-     
-        
       </Slider >
     </div>
   );

@@ -10,14 +10,14 @@ const SlideProduct = ({product}) => {
     }
     
     return (
-        <div className='card rounded shadow-lg '>
-            <div className=" p-10">
+        <div className=''>
+            <div className="card bordered m-1  p-10 focus:ring">
                 <img src={photo} alt="" />
             </div>
             <div>
                 <h2>{name}</h2>
-                <p className='font-bold'>${price}</p>
-                <button onClick={()=>handleOrder(_id)} className="border py-3 border-primary hover:bg-primary px-5 font-bold rounded">Order Now</button>
+                {/* <p className='font-bold'>${price}</p> */}
+                <button onClick={()=>handleOrder(_id)} className="text-black hover:underline">Order Now</button>
             </div>
             
         </div>
