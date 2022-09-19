@@ -9,9 +9,9 @@ import React from "react";
 
 const Summary = () => {
   return (
-    <div className="mt-10">
-      <h1 className="font-bold text-3xl text-rose-700">Our company summary</h1>
-      <div className="">
+    <div className="mt-10 mx-12">
+      <h1 className="font-bold text-3xl">Our company summary</h1>
+      <div className=" grid gap-4">
         <div className="stats stats-vertical lg:stats-horizontal  shadow mt-10">
           <div className="stat ml-5 place-items-center">
             <div className="stat-title text-xl text-black">Order completed</div>

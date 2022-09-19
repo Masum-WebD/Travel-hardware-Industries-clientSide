@@ -13,7 +13,7 @@ const Purchase = () => {
   const [product, setProduct] = useState({});
   const [user]=useAuthState(auth)
   useEffect(() => {
-    fetch(`https://trevel-hardware.herokuapp.com/product/${id}`)
+    fetch(`http://localhost:5000/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -52,13 +52,13 @@ const Purchase = () => {
     
   };
   return (
-    <div className="">
+    <div className="mt-16">
       <div className=" grid lg:grid-cols-3 sm:grid-cols-1 gap-2">
         <div className="hero  ">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={product.img}
-              className="max-w-sm rounded-lg shadow-2xl"
+              className="max-w-sm rounded-lg shadow-lg"
               alt=""
             />
           </div>

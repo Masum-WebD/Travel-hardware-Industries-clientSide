@@ -1,21 +1,26 @@
 import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("https://trevel-hardware.herokuapp.com/review")
+    fetch("http://localhost:5000/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
-    <div className="mx-12">
-      <h1 className="text-3xl mt-10 font-bold text-rose-700">
-        Customer Review
-      </h1>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 mt-6">
-        {reviews.map((review) => (
+    <div className="mx-12 mt-10 bg-[#F6F5F8]">
+      <Slider {...settings} className='text-black'>
+      {reviews.map((review) => (
           <div className="hero bg-base-200" key={review._id}>
             <div className="hero-content">
               <div className="avatar">
@@ -29,9 +34,11 @@ const Reviews = () => {
               </div>
             </div>
           </div>
+
         ))}
-      </div>
+      </Slider>
     </div>
+    
   );
 };
 

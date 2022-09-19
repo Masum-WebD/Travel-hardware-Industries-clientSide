@@ -1,40 +1,55 @@
 import React from "react";
+import { FaPaperPlane} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-rose-500 mt-10 text-base-content">
+    <footer className="footer p-10 text-black mt-10 bg-[#f6f5f8] ">
       <div>
-        <span className="footer-title text-white">Services</span>
-        <a href=" " className="link link-hover text-white">
+        <span className="footer-title ">Services</span>
+        <a href=" " className="link link-hover ">
           Branding
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover ">
           Product sales
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover ">
           Marketing
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover ">
           Advertisement
         </a>
       </div>
       <div>
-        <span className="footer-title text-white">Company</span>
-        <a href=" " className="link link-hover text-white">
+        <span className="footer-title ">Company</span>
+        <a href=" " className="link link-hover ">
           About us
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover">
           Contact
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover ">
           Jobs
         </a>
-        <a href=" " className="link link-hover text-white">
+        <a href=" " className="link link-hover ">
           Press kit
         </a>
       </div>
+      
       <div>
-        <span className="footer-title text-white">Social</span>
+      <div className="mt-2 text-left">
+          <h1 className="text-2xl">Subscribe now</h1>
+          <p>Subscribe our newsletter get 10% <p>off your first update</p>.</p>
+							<div class="relative">
+								<input
+									type="text"
+									placeholder="username@site.com"
+									class="input input-bordered  pr-16"
+								/>
+								<button class="btn btn-primary absolute top-0 right-0 rounded-l-none">
+									<FaPaperPlane className="w-10 h-7"/>
+								</button>
+							</div>
+						</div>
         <div className="grid grid-flow-col gap-4">
           <a href=" ">
             <svg
@@ -69,8 +84,10 @@ const Footer = () => {
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
             </svg>
           </a>
+         
         </div>
-      </div>
+        
+					</div>
     </footer>
   );
 };

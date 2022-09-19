@@ -8,6 +8,8 @@ import Products from "./Products";
 import Reviews from "./Reviews";
 import SlideProducts from "./SlideProducts";
 import Summary from "./Summary";
+import Brand from "./Brand";
+import SpecialProducts from "./SpecialProducts";
 
 const Home = () => {
   return (
@@ -18,10 +20,12 @@ const Home = () => {
       <DiscountMultiBanner></DiscountMultiBanner>
       <Products></Products>
       <DiscountBanner></DiscountBanner>
+      <SpecialProducts></SpecialProducts>
       <Summary></Summary>
-      <Advantage></Advantage>
+      {/* <Advantage></Advantage> */}
       <Reviews></Reviews>
       <ChooseUs></ChooseUs>
+      <Brand></Brand>
      
     </div>
   );

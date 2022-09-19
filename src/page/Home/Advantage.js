@@ -2,7 +2,7 @@ import React from 'react';
 
 const Advantage = () => {
     return (
-        <div className="bg-rose-700 mt-10">
+        <div className="bg-[#0842A6] mt-10">
             <h1 className='text-white font-bold text-3xl py-10 '> Our company fulfillment advantage:</h1>
             <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-5 py-5'>
                 <div>

@@ -2,12 +2,12 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./page/Home/Home";
-import Blogs from "./page/Home/Blogs";
+import ContactUs from "./page/Home/ContactUs";
 import Footer from "./page/Shared/Footer";
 import Login from "./page/Login/Login";
 import Register from "./page/Login/Register";
 import Header from "./page/Home/Header";
-import MyPortfolio from "./page/Home/MyPortfolio";
+import AboutUs from "./page/Home/AboutUs";
 import NotFound from "./page/Shared/NotFound";
 import RequireAuth from "./page/Login/RequireAuth";
 import Purchase from "./page/Purchase/Purchase";
@@ -17,6 +17,7 @@ import AddReview from "./page/DashBoard/AddReview";
 import { ToastContainer } from "react-toastify";
 import MakeAdmin from "./page/DashBoard/MakeAdmin";
 import Users from "./page/DashBoard/Users";
+import Offer from "./page/Home/Offer";
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/contact" element={<ContactUs></ContactUs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="MyPortfolio" element={<MyPortfolio></MyPortfolio>}></Route>
+        <Route path="about" element={<AboutUs></AboutUs>}></Route>
+        <Route path="/offer" element={<Offer></Offer>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="register" element={<Register></Register>}></Route>
+        
         <Route
           path="/dashBoard"
           element={
