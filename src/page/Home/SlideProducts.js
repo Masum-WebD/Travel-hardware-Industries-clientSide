@@ -7,11 +7,11 @@ const SlideProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/slideProduct")
+    fetch("https://cokpit.onrender.com/slideProduct")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
- const settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,
@@ -25,31 +25,33 @@ const SlideProducts = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div className="mt-5 mx-12" >
-      <Slider {...settings} >        
-        {products.map((p) => <SlideProduct kay={p._id} product={p}></SlideProduct>)}
-      </Slider >
+    <div className="mt-5 mx-12">
+      <Slider {...settings}>
+        {products.map((p) => (
+          <SlideProduct kay={p._id} product={p}></SlideProduct>
+        ))}
+      </Slider>
     </div>
   );
 };

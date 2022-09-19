@@ -9,7 +9,7 @@ const Users = () => {
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch("https://trevel-hardware.herokuapp.com/user", {
+    fetch("https://cokpit.onrender.com/user", {
       method: "GET",
       headers: {
         "content-type": "application/json",

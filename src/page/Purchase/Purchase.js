@@ -2,7 +2,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useNavigate, useParams, } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
@@ -11,9 +11,9 @@ const Purchase = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState({});
-  const [user]=useAuthState(auth)
+  const [user] = useAuthState(auth);
   useEffect(() => {
-    fetch(`http://localhost:5000/product/${id}`)
+    fetch(`https://cokpit.onrender.com/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -33,9 +33,9 @@ const Purchase = () => {
       productName: product.name,
       productPrice: product.price,
       productOrder: orderCount,
-      productPurchase:user.email
+      productPurchase: user.email,
     };
-    fetch("https://trevel-hardware.herokuapp.com/orders", {
+    fetch("https://cokpit.onrender.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -46,10 +46,8 @@ const Purchase = () => {
       .then((data) => {
         console.log(data);
         toast("Your order is confirm");
-        navigate('/dashBoard')
+        navigate("/dashBoard");
       });
-
-    
   };
   return (
     <div className="mt-16">

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import auth from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
@@ -8,7 +8,7 @@ const MyOrders = () => {
   useEffect(() => {
     if (user) {
       fetch(
-        `https://trevel-hardware.herokuapp.com/orders?orderUser=${user.email}`
+        `https://cokpit.onrender.com/orders?orderUser=${user.email}`
       )
         .then((res) => res.json())
         .then((data) => setOrders(data));

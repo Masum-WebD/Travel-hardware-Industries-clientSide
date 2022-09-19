@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 const useProducts = () => {
   const [products, setProducts] = useState([]);
-  // https://trevel-hardware.herokuapp.com/product
+  // https://cokpit.onrender.com/product
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://cokpit.onrender.com/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
-
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/review")
+    fetch("https://cokpit.onrender.com/review")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
@@ -15,12 +14,12 @@ const Reviews = () => {
     infinite: true,
     speed: 800,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
   return (
     <div className="mx-12 mt-10 bg-[#F6F5F8]">
-      <Slider {...settings} className='text-black'>
-      {reviews.map((review) => (
+      <Slider {...settings} className="text-black">
+        {reviews.map((review) => (
           <div className="hero bg-base-200" key={review._id}>
             <div className="hero-content">
               <div className="avatar">
@@ -34,11 +33,9 @@ const Reviews = () => {
               </div>
             </div>
           </div>
-
         ))}
       </Slider>
     </div>
-    
   );
 };
 

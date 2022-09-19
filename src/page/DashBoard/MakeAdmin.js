@@ -8,7 +8,7 @@ const MakeAdmin = ({ refetch, index }) => {
 
   const [user] = useAuthState(auth);
   const makeAdmin = () => {
-    fetch(`https://trevel-hardware.herokuapp.com/user/admin/${user.email}`, {
+    fetch(`https://cokpit.onrender.com/user/admin/${user.email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
