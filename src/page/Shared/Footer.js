@@ -3,7 +3,7 @@ import { FaPaperPlane} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 text-black mt-10 bg-[#f6f5f8] ">
+    <footer className="footer p-10 text-black mt-16 bg-[#f6f5f8] ">
       <div>
         <span className="footer-title ">Services</span>
         <a href=" " className="link link-hover ">

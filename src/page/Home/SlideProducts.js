@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from "react";
-// import Carousel from "react-elastic-carousel";
 import Slider from "react-slick";
 import SlideProduct from "./SlideProduct";
+import useProducts from "../Hooks/useProducts";
 
 const SlideProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [products] = useProducts();
 
-  useEffect(() => {
-    fetch("https://cokpit.onrender.com/slideProduct")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  console.log()
   const settings = {
     dots: true,
     infinite: false,
@@ -46,9 +41,9 @@ const SlideProducts = () => {
     ],
   };
   return (
-    <div className="mt-5 mx-12">
+    <div className="mt-10 mx-12">
       <Slider {...settings}>
-        {products.map((p) => (
+        {products.slice(0,7).map((p) => (
           <SlideProduct kay={p._id} product={p}></SlideProduct>
         ))}
       </Slider>

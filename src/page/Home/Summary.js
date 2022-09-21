@@ -9,7 +9,7 @@ import React from "react";
 
 const Summary = () => {
   return (
-    <div className="mt-10 mx-12">
+    <div className="mt-16 mx-12">
       <h1 className="font-bold text-3xl">Our company summary</h1>
       <div className=" grid gap-4">
         <div className="stats stats-vertical lg:stats-horizontal  shadow mt-10">

@@ -18,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import MakeAdmin from "./page/DashBoard/MakeAdmin";
 import Users from "./page/DashBoard/Users";
 import Offer from "./page/Home/Offer";
+import Payment from "./page/Payment/Payment/Payment";
 
 
 function App() {
@@ -34,9 +35,11 @@ function App() {
         <Route path="/offer" element={<Offer></Offer>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="register" element={<Register></Register>}></Route>
+       
+        
         
         <Route
-          path="/dashBoard"
+          path="/dashboard"
           element={
             <RequireAuth>
               <DashBoard></DashBoard>
@@ -47,6 +50,7 @@ function App() {
           <Route path="review" element={<AddReview></AddReview>}></Route>
           <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>}></Route>
           <Route path="users" element={<Users></Users>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
         </Route>
         <Route
           path="/purchase/:id"

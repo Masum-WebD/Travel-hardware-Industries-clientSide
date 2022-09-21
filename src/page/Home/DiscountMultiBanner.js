@@ -5,7 +5,7 @@ import banner3 from "../../Assest/dBanner/sub-banner-3.jpg";
 
 const DiscountMultiBanner = () => {
   return (
-    <div className="mx-12 mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
+    <div className="mx-12 mt-20 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
       <div className="">
         <div
           id=""

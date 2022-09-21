@@ -4,7 +4,7 @@ import banner from "../../Assest/dBanner/cms-banner.png";
 const DiscountBanner = () => {
   return (
     <div>
-      <div className="mx-12 mt-14">
+      <div className="mx-12 mt-16">
         <div
           id=""
           className="carousel-item w-full h-[400px] object-cover bg-no-repeat opacity-80 grid grid-cols-3  items-center"

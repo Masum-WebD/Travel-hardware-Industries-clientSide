@@ -43,7 +43,7 @@ const Brand =()=>{
         ]
       };
     return(
-        <div className="mx-12 mt-10">
+        <div className="mx-12 mt-16">
             <Slider {...settings} >        
         {brands.map((brand) => <div className="card bordered m-1  p-10 hover:p-5  ">
                 <img src={brand.img} alt="" />

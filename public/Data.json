@@ -1,0 +1,136 @@
+[
+  {
+    "name": "CIRCULAR SAW",
+    "price": 39,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/26-cz_categoryimagelist.jpg"
+  },
+
+  {
+    "name": "DRILL TOOL",
+    "price": 30,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/23-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "HAMMER TOOL",
+    "price": 25,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/21-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "DACKER TOOL",
+    "price": 35,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/22-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "CALIFORNIA AIR",
+    "price": 49,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/24-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "PLANET POWER",
+    "price": 60,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/20-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "WRENCH TOOLS",
+    "price": 40,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/25-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "Occaecat voluptas volu accusantium doloremque",
+    "price": 45,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/1/0/4/104-home_default.jpg"
+  },
+  {
+    "name": "Nostrud exercitation dolorem voluptatem accusantium",
+    "price": 90,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/7/97-home_default.jpg"
+  },
+  {
+    "name": "DRILL TOOL",
+    "price": 99,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/6/0/60-home_default.jpg"
+  },
+  {
+    "name": "Metabo",
+    "dis": "",
+    "price": 89,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/5/4/54-home_default.jpg"
+  },
+  {
+    "name": "WRENCH TOOLS",
+    "price": 45,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/25-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "CIRCULAR SAW",
+    "price": 49,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/26-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "PLANET POWER",
+    "price": 40,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/20-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "PLANET POWER",
+    "price": 39,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/22-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "PLANET TOOL",
+    "price": 100,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/5/5/55-home_default.jpg"
+  },
+
+  {
+    "name": "PLANET TOOL",
+    "price": 80,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/7/9/79-home_default.jpg"
+  },
+  {
+    "name": "PLANET TOOL",
+    "price": 40,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/0/90-home_default.jpg"
+  },
+  {
+    "name": "PLANET TOOL",
+    "price": 30,
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/23-cz_categoryimagelist.jpg"
+  },
+  {
+    "name": "Wire strippers",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/1/91-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 79
+  },
+  {
+    "name": "Commodi consequatur asdic renaissance",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/6/96-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 29
+  },
+  {
+    "name": "Accusanti doloremq harum quidem rerum",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/3/6/36-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 69
+  },
+  {
+    "name": "Commodi consequatur asdic renaissance",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/6/96-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 29
+  },
+  {
+    "name": "Consectetur hampden omnis perspiciatis",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/2/4/24-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 79
+  },
+  {
+    "name": "Exercitat virginia voluptates repudiandae...",
+    "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/0/90-home_default.jpg",
+    "description": "Steel Range We make it with the best steel. The product is very usable. It has a lot of durability.",
+    "price": 79
+  }
+]

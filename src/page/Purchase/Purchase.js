@@ -1,5 +1,3 @@
-import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate, useParams } from "react-router-dom";
@@ -18,22 +16,21 @@ const Purchase = () => {
       .then((data) => setProduct(data));
   }, [id]);
 
-  const handleMinus = (e) => {
-    e.preventDefault();
-    let minus = orderRef.current.value;
-    const countValue = `${product.availableQuantity}`;
-    if (minus > countValue) {
-      minus = countValue - 1;
-    }
-  };
+  // const handleMinus = (e) => {
+  //   e.preventDefault();
+  //   let minus = orderRef.current.value;
+  //   const countValue = `${product.availableQuantity}`;
+  //   if (minus > countValue) {
+  //     minus = countValue - 1;
+  //   }
+  // };
   const handleOrder = (e) => {
-    const orderCount = orderRef.current.value;
+    // const orderCount = orderRef.current.value;
     const orders = {
-      productId: product._id,
-      productName: product.name,
-      productPrice: product.price,
-      productOrder: orderCount,
-      productPurchase: user.email,
+      name: product.name,
+      price:product.price,
+      // productOrder: orderCount,
+      user: user.email,
     };
     fetch("https://cokpit.onrender.com/orders", {
       method: "POST",
@@ -50,48 +47,19 @@ const Purchase = () => {
       });
   };
   return (
-    <div className="mt-16">
-      <div className=" grid lg:grid-cols-3 sm:grid-cols-1 gap-2">
-        <div className="hero  ">
-          <div className="hero-content flex-col lg:flex-row">
-            <img
-              src={product.img}
-              className="max-w-sm rounded-lg shadow-lg"
-              alt=""
-            />
+    <div className="mt-15">
+      <div class="card card-side bg-base-100 shadow-xl w-[400px] m-auto mt-20">
+        <figure>
+          <img src={product.img} alt="Movie" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">{product.name}</h2>
+          <p className=" text-xl font-bold"> Price: ${product.price}</p>
+          <div class="card-actions justify-end">
+            <button onClick={handleOrder} class="btn btn-primary">Confirm Order</button>
           </div>
         </div>
-        <div className="mt-20">
-          <h1 className="text-2xl font-bold">{product.name}</h1>
-          <p>{product.description}</p>
-          <h2 className="font-bold text-xl">Price: ${product.price}</h2>
-          <h2 className="font-bold text-xl">
-            Available Quantity: {product.availableQuantity} Pice
-          </h2>
-          <h2 className="font-bold text-xl">
-            Available Quantity: {product.minQuantity} Pice
-          </h2>
-        </div>
-        <div className="flex gap-4">
-          <button onClick={handleMinus} className="ms-6">
-            <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
-          </button>
-
-          <input
-            ref={orderRef}
-            min="0"
-            className="form-control w-12 h-10 my-32 bg-[#F6F5FA]"
-            type="number"
-            value={product.minQuantity}
-          />
-          <button>
-            <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
-          </button>
-        </div>
       </div>
-      <button onClick={handleOrder} className="btn btn-primary">
-        Confirm order
-      </button>
     </div>
   );
 };

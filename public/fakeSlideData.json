@@ -1,33 +1,33 @@
 [
     {
         "name": "Occaecat voluptas volu accusantium doloremque",
-        "price": 40,
+        "price": 45,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/1/0/4/104-home_default.jpg"
     },
     {
         "name": "Nostrud exercitation dolorem voluptatem accusantium",
-        "price": 40,
+        "price": 90,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/9/7/97-home_default.jpg"
     },
     {
         "name": "DRILL TOOL",
-        "price": 40,
+        "price": 99,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/6/0/60-home_default.jpg"
     },
     {
         "name": "Metabo",
         "dis":"",
-        "price": 40,
+        "price": 89,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/5/4/54-home_default.jpg"
     },
     {
         "name": "WRENCH TOOLS",
-        "price": 40,
+        "price": 45,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/25-cz_categoryimagelist.jpg"
     },
     {
         "name": "CIRCULAR SAW",
-        "price": 40,
+        "price": 49,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/26-cz_categoryimagelist.jpg"
     },
     {
@@ -37,18 +37,18 @@
     },
     {
         "name": "PLANET POWER",
-        "price": 40,
+        "price": 39,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/22-cz_categoryimagelist.jpg"
     },
     {
         "name": "PLANET TOOL",
-        "price": 40,
+        "price": 100,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/5/5/55-home_default.jpg"
     },
     
     {
         "name": "PLANET TOOL",
-        "price": 40,
+        "price": 80,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/img/p/7/9/79-home_default.jpg"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
         "name": "PLANET TOOL",
-        "price": 40,
+        "price": 30,
         "img": "https://demo.codezeel.com/prestashop/PRS17/PRS170411/PRS02/modules/cz_categoryimagelist/views/img/23-cz_categoryimagelist.jpg"
     }
 

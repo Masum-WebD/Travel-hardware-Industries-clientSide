@@ -17,7 +17,7 @@ const Reviews = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="mx-12 mt-10 bg-[#F6F5F8]">
+    <div className="mx-12 mt-16 bg-[#F6F5F8]">
       <Slider {...settings} className="text-black">
         {reviews.map((review) => (
           <div className="hero bg-base-200" key={review._id}>

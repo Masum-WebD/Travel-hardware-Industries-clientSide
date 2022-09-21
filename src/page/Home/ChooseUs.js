@@ -2,7 +2,7 @@ import React from "react";
 
 const ChooseUs = () => {
   return (
-    <div className="mx-12 mt-10">
+    <div className="mx-12 mt-16">
       <h1 className="text-xl mt-10 ">
         Why would you take our product?
       </h1>

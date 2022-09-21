@@ -119,7 +119,7 @@ const Header = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="mx-5 hover:text-primary">
-              <NavLink to="/all-products">Shop</NavLink>
+              <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
             <li className="mx-5 hover:text-primary">
               <NavLink to="/about">About Us</NavLink>
