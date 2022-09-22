@@ -18,16 +18,11 @@ const Home = () => {
       <Banner></Banner>
       <SlideProducts></SlideProducts>
       <DiscountMultiBanner></DiscountMultiBanner>
-      {/* // Special Product. */}
       <SpecialProducts></SpecialProducts> 
-     
       <DiscountBanner></DiscountBanner>
-      {/* // all Product show. */}
       <Products></Products> 
-      {/* <Advantage></Advantage> */}
       <Summary></Summary>
       <Reviews></Reviews>
-      <ChooseUs></ChooseUs>
       <Brand></Brand>
      
     </div>

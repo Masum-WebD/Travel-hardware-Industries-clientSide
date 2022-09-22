@@ -19,6 +19,7 @@ import MakeAdmin from "./page/DashBoard/MakeAdmin";
 import Users from "./page/DashBoard/Users";
 import Offer from "./page/Home/Offer";
 import Payment from "./page/Payment/Payment/Payment";
+import ChooseUs from "./page/Home/ChooseUs";
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           }
         ></Route>
       </Routes>
+      <ChooseUs></ChooseUs>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>

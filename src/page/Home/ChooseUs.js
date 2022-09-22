@@ -1,45 +1,30 @@
+import { faPiggyBank, faSackDollar, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GiCommercialAirplane} from "react-icons/gi";
 import React from "react";
 
 const ChooseUs = () => {
   return (
-    <div className="mx-12 mt-16">
-      <h1 className="text-xl mt-10 ">
-        Why would you take our product?
-      </h1>
-      <h1 className="text-3xl font-bold ">Our service</h1>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
-        <div className="card lg:max-w-lg bg-base-100 hover:bg-[#89abe5] shadow-xl">
-          <div className="card-body">
-            <h2 className="text-center text-2xl font-bold">
-              24/7 Online Support
-            </h2>
-            <p>
-              We provide online support 24 hours a day, 7 days a week so you
-              don't have to worry about buying ponies.
-            </p>
-          </div>
+    <div className="bg-primary mt-16 ">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-1 gap-8 mx-12">
+        <div className="flex text-white p-7">
+        <FontAwesomeIcon className="my-auto" icon={faSackDollar} />
+        <p className="front-bold px-2">14-DAY MONEY BACK</p>
         </div>
-        <div className="card lg:max-w-lg bg-base-100 hover:bg-[#89abe5] shadow-xl">
-          <div className="card-body">
-            <h2 className="text-center text-2xl font-bold">Guarantee</h2>
-            <p>
-              You can safely take the product from us. There is no fear of money
-              and if the product is bad then there is any defect then we did not
-              return and provide new product
-            </p>
-          </div>
+        <div className="flex text-white p-7">
+          <GiCommercialAirplane className="my-auto"/>
+        {/* <FontAwesomeIcon className="my-auto" icon={faSackDollar} /> */}
+        <p className="front-bold px-2">FAST FREE SHIPMENT</p>
         </div>
-        <div className="card lg:max-w-lg bg-base-100 hover:bg-[#89abe5] shadow-xl">
-          <div className="card-body">
-            <h2 className="text-center text-2xl font-bold">Offer</h2>
-            <p>
-              If you take regular products from us then we offer different types
-              of benefits. For example, we sometimes reduce the cost of delivery
-              if we bear the delivery cost ourselves.
-            </p>
-          </div>
+        <div className="flex text-white p-7">
+        <FontAwesomeIcon className="my-auto" icon={faPiggyBank} />
+        <p className="front-bold px-2">MONEY BACK GUARENTEE</p>
         </div>
-      </div>
+        <div className="flex text-white p-7">
+        <FontAwesomeIcon className="my-auto" icon={faThumbsUp} />
+        <p className="front-bold px-2">SAVE 20% WHEN YOU</p>
+        </div>
+        </div>
     </div>
   );
 };
