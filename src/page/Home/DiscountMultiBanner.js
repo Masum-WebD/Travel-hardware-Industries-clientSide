@@ -9,53 +9,42 @@ const DiscountMultiBanner = () => {
       <div className="">
         <div
           id=""
-          class="carousel-item w-full h-[200px] bg-no-repeat"
+          className="carousel-item w-full h-[200px] bg-no-repeat"
           style={{ backgroundImage: `url(${banner1})` }}
         >
-          {/* <img src={banner2} class="w-full" alt="" /> */}
-          <div class=" text-black my-auto ml-5 text-left w-2/5 ">
-            <h1 className="text-black  text-xl">
-              {" "}
-              Flat 20% Discount
-            </h1>
+          {/* <img src={banner2} className="w-full" alt="" /> */}
+          <div className=" text-black my-auto ml-5 text-left w-2/5 ">
+            <h1 className="text-black  text-xl"> Flat 20% Discount</h1>
             <h1 className="text-xl font-bold  ">Orbital Sander Tools</h1>
-            <button class=" text-black hover:underline">Shop Now</button>
+            <button className=" text-black hover:underline">Shop Now</button>
           </div>
         </div>
       </div>
       <div className="">
         <div
           id=""
-          class="carousel-item w-full h-[200px] bg-no-repeat"
+          className="carousel-item w-full h-[200px] bg-no-repeat"
           style={{ backgroundImage: `url(${banner2})` }}
         >
-          {/* <img src={banner2} class="w-full" alt="" /> */}
-          <div class=" text-black my-auto ml-5 text-left w-2/5 ">
-            <h1 className="text-black  text-xl">
-              {" "}
-              Flat 30% Discount
-            </h1>
-            <h1 className="text-xl font-bold  ">Ingco Angle
-Grinder</h1>
-            <button class=" text-black hover:underline">Shop Now</button>
+          {/* <img src={banner2} className="w-full" alt="" /> */}
+          <div className=" text-black my-auto ml-5 text-left w-2/5 ">
+            <h1 className="text-black  text-xl"> Flat 30% Discount</h1>
+            <h1 className="text-xl font-bold  ">Ingco Angle Grinder</h1>
+            <button className=" text-black hover:underline">Shop Now</button>
           </div>
         </div>
       </div>
       <div className="">
         <div
           id=""
-          class="carousel-item w-full h-[200px] bg-no-repeat"
+          className="carousel-item w-full h-[200px] bg-no-repeat"
           style={{ backgroundImage: `url(${banner3})` }}
         >
-          {/* <img src={banner2} class="w-full" alt="" /> */}
-          <div class=" text-black my-auto ml-5 text-left w-2/5 ">
-            <h1 className="text-black  text-xl">
-              {" "}
-              Flat 10% Discount
-            </h1>
-            <h1 className="text-xl font-bold  ">Ingco Water
-Pump</h1>
-            <button class=" text-black hover:underline">Shop Now</button>
+          {/* <img src={banner2} className="w-full" alt="" /> */}
+          <div className=" text-black my-auto ml-5 text-left w-2/5 ">
+            <h1 className="text-black  text-xl"> Flat 10% Discount</h1>
+            <h1 className="text-xl font-bold  ">Ingco Water Pump</h1>
+            <button className=" text-black hover:underline">Shop Now</button>
           </div>
         </div>
       </div>
