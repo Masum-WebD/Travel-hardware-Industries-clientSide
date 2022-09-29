@@ -18,8 +18,9 @@ import { ToastContainer } from "react-toastify";
 import MakeAdmin from "./page/DashBoard/MakeAdmin";
 import Users from "./page/DashBoard/Users";
 import Offer from "./page/Home/Offer";
-import Payment from "./page/Payment/Payment/Payment";
+
 import ChooseUs from "./page/Home/ChooseUs";
+import Payment from "./page/Payment/Payment";
 
 
 function App() {

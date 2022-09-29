@@ -6,12 +6,7 @@ const useAdmin = (user) => {
   useEffect(() => {
     const email = user?.email;
     if (email) {
-      fetch(`https://cokpit.onrender.com/admin/${email}`, {
-        method: "GET",
-        headers: {
-          "content-type": "application/json",
-        },
-      })
+      fetch(`https://cokpit.onrender.com/admin/${email}`)
         .then((res) => res.json())
         .then((data) => {
           setAdmin(data.admin);

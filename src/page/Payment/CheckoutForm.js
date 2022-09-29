@@ -1,16 +1,18 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useEffect, useState } from "react";
 
-const CheckoutForm = ({ order }) => {
+const CheckoutForm = ({ price }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [cardError, setCardError] = useState("");
   const [clientSecret, setClientSecret] = useState("");
-  const { price } = order;
-  console.log(price);
+  // const { price } = order;
+  // console.log(price);
+  console.log(price)
+  // const Price =parseInt(order.price)
 
   useEffect(() => {
-    fetch("https://cokpit.onrender.com/create-payment-intent", {
+    fetch("https://book-store-46yi.onrender.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -18,7 +20,9 @@ const CheckoutForm = ({ order }) => {
       body: JSON.stringify({ price }),
     })
       .then((res) => res.json())
+
       .then((data) => {
+        console.log(data)
         if (data?.clientSecret) {
           setClientSecret(data.clientSecret);
         }

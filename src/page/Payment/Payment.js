@@ -1,19 +1,17 @@
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
+
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import payment from "../../../Assest/Paymen/payment.svg";
-import CheckoutForm from "../CheckoutForm";
+import payment from "../../Assest/Paymen/payment.svg";
+import PaymentCard from "./PaymentCard";
 
 const Payment = () => {
   const { id } = useParams();
-  const stripePromise = loadStripe(
-    "pk_test_51LXxS0A5hc9xpUZ0CEbGeEedP2aIPPZpBzZdbG06uyyBR9ahciDm6QGz74sI3znpXTft85sRDrLtoPK7Y0HhdMTI000YHEQavk"
-  );
+  
 
   const [order, setOrder] = useState({});
   useEffect(() => {
-    fetch(`https://cokpit.onrender.com/orders/${id}`)
+    fetch(`http://localhost:5000/orders/${id}`)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [id]);
@@ -33,11 +31,7 @@ const Payment = () => {
         </div>
       </div>
       <div className="card w-96 bg-base-100 shadow-xl mx-auto">
-        <div className="card-body">
-          <Elements stripe={stripePromise}>
-            <CheckoutForm order={order} />
-          </Elements>
-        </div>
+        <PaymentCard price={order.price}/>
       </div>
     </div>
   );
